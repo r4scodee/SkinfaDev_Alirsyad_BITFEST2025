@@ -3914,7 +3914,7 @@ footer .copyright_row P {
 .blog_card .blog_card_text_block {
     position: relative;
     z-index: 10;
-    background: url(../media/backgrounds/blog_card_bg.png) no-repeat;
+    background: url(../media/backgrounds/berita-overlay.png) no-repeat;
     background-position: top;
     margin-top: -88px;
     box-shadow: drop-shadow(-2px -1px 5px rgba(2, 69, 122, 0.04)) drop-shadow(-9px -4px 10px rgba(2, 69, 122, 0.03)) drop-shadow(-19px -10px 13px rgba(2, 69, 122, 0.02)) drop-shadow(-35px -17px 15px rgba(2, 69, 122, 0.01)) drop-shadow(-54px 27px 17px rgba(2, 69, 122, 0));
@@ -4022,7 +4022,7 @@ footer .copyright_row P {
 .team-slider {
     border-radius: 15px 0 0 15px;
     background: rgba(10, 166, 215, 0.1);
-    background: url(../media/backgrounds/team-slider-bg.png) no-repeat;
+    background: url(../media/backgrounds/tim-bg.png) no-repeat;
     background-size: cover;
     background-position: 109px;
 }
@@ -4850,8 +4850,8 @@ footer .copyright_row P {
     margin-bottom: 20px;
 }
 
-.courses-1 {
-    background: url(../media/backgrounds/courses-1.png) no-repeat;
+.fakultas-bg {
+    background: url(../media/backgrounds/fakultas-bg.png) no-repeat;
     background-size: cover;
     background-position: center;
     background-size: cover;
@@ -5660,7 +5660,7 @@ footer .copyright_row P {
 }
 
 .discount_banner {
-    background: url(../media/backgrounds/coming-soon-banner.png) no-repeat;
+    background: url(../media/backgrounds/beasiswa-bg.png) no-repeat;
     background-size: cover;
     background-position: center;
     overflow: hidden;

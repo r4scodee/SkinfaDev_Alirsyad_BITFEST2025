@@ -1,4 +1,4 @@
-# SkinfaDev_smkinformatika-alirsyad-crbn_BITFEST2025
+# SkinfaDev_smkinformatika-alirsyad-crbn_BitFest2025
 
 ## Contributor
  - Irbadh As-siribuny

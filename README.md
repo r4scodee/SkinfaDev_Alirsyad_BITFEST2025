@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-# project_universitasCIC
-
-## Contributor
- Irbadh
-=======
 # SkinfaDev_smkinformatika-alirsyad_BITFEST2025
 
 ## Contributor
@@ -25,6 +19,8 @@ Website ini dirancang untuk menampilkan profil Universitas CIC secara informatif
 - **JavaScript** → Interaktivitas
 - **Bootstrap** → Framework utama untuk tampilan responsif
 
+## Cara run project
+Salin link repository ini dan clone ke folder yang anda inginkan. setelah itu buka file index.html lewat browser.
+
 ## Dokumentasi Website
 <img width="1366" height="702" alt="image" src="https://github.com/user-attachments/assets/7ee8eed0-47a8-4093-8fc8-ed343296ed9a" />
->>>>>>> ec071e8312b118071446564fef5f39e37b570b33

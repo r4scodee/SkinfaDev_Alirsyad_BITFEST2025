@@ -1,0 +1,123 @@
+/* Base odometer container */
+
+.odometer.odometer-auto-theme,
+.odometer.odometer-theme-default {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    text-align: center;
+    /* font-family: "Helvetica Neue", sans-serif; */
+    /* line-height: 1.1em; */
+}
+
+
+/* Digit wrapper */
+
+.odometer.odometer-auto-theme .odometer-digit,
+.odometer.odometer-theme-default .odometer-digit {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+
+/* Spacer inside each digit (used for width consistency) */
+
+.odometer-digit .odometer-digit-spacer {
+    display: inline-block;
+    vertical-align: middle;
+    visibility: hidden;
+}
+
+
+/* Inner digit for scrolling effect */
+
+.odometer-digit .odometer-digit-inner {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    text-align: left;
+}
+
+
+/* Ribbon container */
+
+.odometer-digit .odometer-ribbon {
+    display: block;
+}
+
+
+/* Actual scrolling ribbon */
+
+.odometer-digit .odometer-ribbon-inner {
+    display: block;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+/* Visible value */
+
+.odometer-digit .odometer-value {
+    display: block;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+
+/* Last value for transition */
+
+.odometer-value.odometer-last-value {
+    position: absolute;
+}
+
+
+/* Animating up */
+
+.odometer.odometer-auto-theme.odometer-animating-up .odometer-ribbon-inner,
+.odometer.odometer-theme-default.odometer-animating-up .odometer-ribbon-inner {
+    transition: transform 2s;
+    -webkit-transition: -webkit-transform 2s;
+    -moz-transition: -moz-transform 2s;
+    -ms-transition: -ms-transform 2s;
+    -o-transition: -o-transform 2s;
+}
+
+.odometer.odometer-auto-theme.odometer-animating-up.odometer-animating .odometer-ribbon-inner,
+.odometer.odometer-theme-default.odometer-animating-up.odometer-animating .odometer-ribbon-inner {
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+}
+
+
+/* Animating down */
+
+.odometer.odometer-auto-theme.odometer-animating-down .odometer-ribbon-inner,
+.odometer.odometer-theme-default.odometer-animating-down .odometer-ribbon-inner {
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+}
+
+.odometer.odometer-auto-theme.odometer-animating-down.odometer-animating .odometer-ribbon-inner,
+.odometer.odometer-theme-default.odometer-animating-down.odometer-animating .odometer-ribbon-inner {
+    transition: transform 2s;
+    -webkit-transition: -webkit-transform 2s;
+    -moz-transition: -moz-transform 2s;
+    -ms-transition: -ms-transform 2s;
+    -o-transition: -o-transform 2s;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}

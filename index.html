@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Portal - Catur Insan Cendekia University Cirebon</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/media/favicon.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/jquery.magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+
+    <!-- fix font ngebug -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css">
+
+    <style>
+        .topbar-custom {
+            display: flex;
+            background: #0352a1;
+            color: white;
+            font-size: 14px;
+            padding: 10px 0;
+        }
+        
+        .topbar-custom .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .topbar-custom__left {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .info-block {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .info-block .icon {
+            background-color: white;
+            color: #0352a1;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+        
+        .info-block .text {
+            line-height: 1.2;
+        }
+        
+        .info-block strong {
+            display: block;
+            font-weight: 600;
+        }
+        
+        .topbar-custom__right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .topbar-custom__right .follow-label {
+            font-weight: 500;
+        }
+        
+        .social-icons a {
+            display: inline-flex;
+            width: 42px;
+            height: 42px;
+            border: 1.5px solid white;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+        
+        .social-icons a:hover {
+            background: white;
+            color: #0352a1;
+        }
+
+        @media (max-width: 1023px) {
+            .topbar-custom {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body class="custom-cursor locked">
+
+    <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div>
+
+
+    <div class="topbar-custom">
+        <div class="container">
+            <div class="topbar-custom__left">
+                <div class="info-block">
+                    <span class="icon"><i class="fas fa-envelope"></i></span>
+                    <div class="text">
+                        <strong>Email</strong>
+                        <div>info@cic.ac.id</div>
+                    </div>
+                </div>
+                <div class="info-block">
+                    <span class="icon"><i class="fas fa-phone"></i></span>
+                    <div class="text">
+                        <strong>Telephone</strong>
+                        <div>+6289512314188</div>
+                    </div>
+                </div>
+                <div class="info-block">
+                    <span class="icon"><i class="fas fa-clock"></i></span>
+                    <div class="text">
+                        <strong>Jam Operasional</strong>
+                        <div>Senin - Sabtu (08.00 – 17.00 WIB)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="topbar-custom__right">
+                <span class="follow-label">Follow Us :</span>
+                <div class="social-icons">
+                    <a href="https://www.tiktok.com/@universitas_cic"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/universitas_cic"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/page.stmik.cic"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/@universitascic"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-wrapper" class="main-wrapper">
+        <header>
+            <nav class="main-menu">
+                <div class="container">
+                    <div class="main-menu__block">
+                        <div class="main-menu__left">
+
+                            <div class="main-menu__logo">
+                                <a href="index.html">
+                                    <img src="assets/media/resource-cic/cic-logo.png" alt="UCIC" width="250px" height="50px">
+                                </a>
+                            </div>
+
+                            <div class="main-menu__nav">
+                                <ul class="main-menu__list">
+                                    <li><a href="index.html" class="active">Beranda</a></li>
+                                    <li><a href="about.html">Tentang Kami</a></li>
+
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);">Fakultas</a>
+                                        <ul>
+                                            <li><a href="fakultas-FTI.html">Fakultas Teknologi dan Informasi</a></li>
+                                            <li><a href="fakultas-FEB.html">Fakultas Ekonomi dan Bisnis</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="berita.html">Berita</a></li>
+                                    <li class="dropdown ">
+                                        <a href="javascript:void(0);">Tim</a>
+                                        <ul>
+                                            <li><a href="dosen.html">Dosen Mengajar</a></li>
+                                            <li><a href="galeri.html">Galeri</a></li> 
+                                            <li><a href="fasilitas.html">Fasilitas</a></li> 
+                                        </ul>
+                                    </li>
+                                    <li><a href="faq.html">Faq</a></li>
+
+                                    <li><a href="kontak.html">Kontak</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="main-menu__right">
+                            <a href="#" class="main-menu__search search-toggler">
+                                <i class="fal fa-search"></i>
+                            </a>
+                            <a href="kontak.html" class="educate-btn sm d-xl-flex d-none"><span
+                                    class="educate-btn__curve"></span>Daftar Sekarang</a>
+                            <a href="#" class="main-menu__toggler mobile-nav__toggler">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="stricky-header stricked-menu main-menu">
+            <div class="sticky-header__content"></div>
+        </div>
+
+        <section class="hero-banner-1">
+            <div class="container">
+                <div class="icons">
+                    <img src="assets/media/shapes/dollar.png" alt="" class="dollar wow zoomIn" data-wow-delay="400ms">
+                    <img src="assets/media/shapes/mic.png" alt="" class="mic wow zoomIn" data-wow-delay="500ms">
+                    <img src="assets/media/shapes/light.png" alt="" class="light wow zoomIn" data-wow-delay="600ms">
+                    <img src="assets/media/shapes/camera.png" alt="" class="camera wow zoomIn" data-wow-delay="700ms">
+                </div>
+                <div class="content">
+                    <div class="text_block wow fadeInUp" data-wow-delay="800ms">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-8">
+                                <img src="assets/media/shapes/tag.png" alt="" class="mb-24 tag wow slideInDown" data-wow-delay="550ms">
+                                <h1 class="mb-16 title">SELAMAT DATANG DI UNIVERSITAS <span class="fm-sec">CIC CIREBON
+                                        <img src="assets/media/shapes/rocket.png" alt="" class="rocket wow zoomIn"
+                                            data-wow-delay="700ms"></span></h1>
+                                <h4 class="mb-48">"Menjadi Technopreneur Unggul untuk Masa Depan Bangsa"</h4>
+                                <div class="btn_block">
+                                    <a href="kontak.html" class="educate-btn sec"><span
+                                            class="educate-btn__curve"></span>Daftar Sekarang </a>
+                                    <img src="assets/media/shapes/arrow.png" alt="" class="arrow">
+                                </div>
+                                <div class="video-btn wow zoomIn" data-wow-delay="700ms">
+                                    <img src="assets/media/banners/hero-banner-1/round-text.png" alt="" class="text-vector">
+                                    <a href="https://youtube.com/watch?v=1W6DT41xQvw?si=CXlagm1N7FdZ0rqJ" class="play-btn video-popup">
+                                        <i class="fas fa-play"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner_feature_card">
+                    <div class="card_block">
+                        <h6 class="mb-4p">Kuliah Berkualitas</h6>
+                        <p>Kurikulum & Teknologi Terbaru</p>
+
+
+                        <img src="assets/media/shapes/target-2.png" alt="" class="target_icon">
+                    </div>
+                </div>
+                <img src="assets/media/resource-cic/main-new.png" alt="" class="main-img">
+            </div>
+        </section>
+
+        <section class="py-60">
+            <div class="container">
+                <div class="row row-gap-4">
+                    <div class="col-xl-3 col-sm-6 wow fadeInUp" data-wow-delay="200ms">
+                        <div class="feature__card mb-24 mb-xl-0">
+                            <div class="feature__icon">
+                                <img src="assets/media/icons/student.png" alt="" width="41px">
+                            </div>
+                            <div class="feature__content">
+                                <h5 class="mb-8">Beasiswa</h5>
+                                <p>Tersedia berbagai jenis beasiswa akademik, prestasi, dan lainya.</p>
+                                <img src="assets/media/shapes/feture-bg-shape.png" alt="" class="feature-bg-shape">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 wow fadeInUp" data-wow-delay="400ms">
+                        <div class="feature__card mb-24 mb-xl-0">
+                            <div class="feature__icon">
+                                <img src="assets/media/icons/lightbulb-on.png" alt="" width="41px">
+                            </div>
+                            <div class="feature__content">
+                                <h5 class="mb-8">Kampus Technopreneur</h5>
+                                <p>Menjadi lulusan yang siap menjadi pengusaha berbasis teknologi.</p>
+                                <img src="assets/media/shapes/feture-bg-shape.png" alt="" class="feature-bg-shape">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 wow fadeInUp" data-wow-delay="600ms">
+                        <div class="feature__card mb-24 mb-sm-0">
+                            <div class="feature__icon">
+                                <img src="assets/media/icons/chalkboard-user.png" alt="" width="41px">
+                            </div>
+                            <div class="feature__content">
+                                <h5 class="mb-8">Dosen Berpengalaman</h5>
+                                <p>Didukung oleh tenaga pengajar kompeten di bidangnya.</p>
+                                <img src="assets/media/shapes/feture-bg-shape.png" alt="" class="feature-bg-shape">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6 wow fadeInUp" data-wow-delay="800ms">
+                        <div class="feature__card">
+                            <div class="feature__icon">
+                                <img src="assets/media/icons/medal.png" alt="" width="41px">
+                            </div>
+                            <div class="feature__content">
+                                <h5 class="mb-8">Sertifikasi</h5>
+                                <p>Sertifikat skill tambahan dibidang coding, desain, dan lainya.</p>
+                                <img src="assets/media/shapes/feture-bg-shape.png" alt="" class="feature-bg-shape">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-60">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-48 mb-lg-0">
+                        <div class="heading mb-16">
+                            <h6 class="color-primary mb-8">Tentang kami</h6>
+                            <h2>Membangun Ekosistem Pembelajaran <span class="fm-sec">Digital & Inovatif</span></h2>
+                        </div>
+                        <p class="mb-32">
+                            UCIC adalah kampus technopreneur yang fokus pada inovasi, teknologi, dan pengembangan wirausaha muda untuk menjawab tantangan zaman.
+                        </p>
+                        <div class="about__card mb-24 wow fadeInLeft" data-wow-delay="200ms">
+                            <div class="about__card__icon">
+                                <img src="assets/media/icons/star.png" alt="" width="41px">
+                            </div>
+                            <div class="about__card__content">
+                                <h5 class="mb-4p">VISI Universitas CIC</h5>
+                                <p>"Menjadi universitas yang berorientasi dalam bidang teknologi dan kewirausahaan, untuk mendukung masyarakat daerah dengan menghasilkan lulusan yang marnpu untuk menanggapi perubahan jaman."</p>
+                            </div>
+                        </div>
+                        <div class="about__card mb-24 wow fadeInLeft" data-wow-delay="400ms">
+                            <div class="about__card__icon">
+                                <img src="assets/media/icons/rocket-lunch (1).png" alt="" width="41px">
+                            </div>
+                            <div class="about__card__content">
+                                <h5 class="mb-4p">MISI Universitas CIC</h5>
+                                <p>1. Menyelenggarakan pengajaran yang berfokus untuk menghasilkan lulusan-lulusan yang mampu untuk menanggapi perubahan jaman.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="text-end wow fadeInUp" data-wow-delay="600ms">
+                            <a href="about.html" class="educate-btn"><span
+                                    class="educate-btn__curve"></span>Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="educate-tilt" data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 2, "speed": 700, "scale": 1 }'>
+                            <img src="assets/media/resource-cic/about-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="py-80 bg-white">
+            <div class="brands-slider">
+                <div class="brand">
+                    <img src="assets/media/brand/barnd-1.png" alt="">
+                </div>
+                <div class="brand">
+                    <img src="assets/media/brand/barnd-2.png" alt="">
+                </div>
+                <div class="brand">
+                    <img src="assets/media/brand/barnd-3.png" alt="">
+                </div>
+                <div class="brand">
+                    <img src="assets/media/brand/barnd-4.png" alt="">
+                </div>
+                <div class="brand">
+                    <img src="assets/media/brand/barnd-5.png" alt="">
+                </div>
+                <div class="brand">
+                    <img src="assets/media/brand/barnd-6.png" alt="">
+                </div>
+                <div class="brand">
+                    <img src="assets/media/brand/barnd-1.png" alt="">
+                </div>
+                <div class="brand">
+                    <img src="assets/media/brand/barnd-2.png" alt="">
+                </div>
+                <div class="brand">
+                    <img src="assets/media/brand/barnd-3.png" alt="">
+                </div>
+                <div class="brand">
+                    <img src="assets/media/brand/barnd-4.png" alt="">
+                </div>
+                <div class="brand">
+                    <img src="assets/media/brand/barnd-5.png" alt="">
+                </div>
+                <div class="brand">
+                    <img src="assets/media/brand/barnd-6.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <section class="py-60 ">
+            <div class="container">
+                <div class="section-title mb-48">
+                    <div class="heading">
+                        <h6 class="color-primary mb-8">Fakultas</h6>
+                        <h2>Belajar Lebih Dekat,<br> Bersama UCIC untuk <span class="fm-sec">Setiap Generasi
+                                Hebat</span></h2>
+                    </div>
+                    <a href="fakultas-FTI.html" class="educate-btn d-md-block d-none"><span
+                            class="educate-btn__curve"></span>Lihat Semua</a>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="course__category__card_1 mb-24">
+                            <div class="course__category__card_text">
+                                <a href="fakultas-FEB.html" class="course__category__card_title h4 mb-16">Ekonomi dan
+                                    Bisnis</a>
+                                <p class="mb-40">Mempersiapkan mahasiswa menjadi pemimpin bisnis masa depan yang inovatif dan adaptif di era digital.</p>
+                            </div>
+                            <img src="assets/media/fakultas/resource/fakultas-feb-3d.png" alt="" class="image">
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="600ms">
+                        <div class="course__category__card_1 mb-24 mb-xl-0">
+                            <div class="course__category__card_text">
+                                <a href="fakultas-FTI.html" class="course__category__card_title h4 mb-16">Teknologi
+                                    Informasi</a>
+                                <p class="mb-40">Fokus pada pengembangan teknologi digital, pemrograman, keamanan data, dan inovasi berbasis technopreneur.</p>
+                            </div>
+                            <img src="assets/media/fakultas/resource/fakultas-fti-3d.png" alt="" class="image">
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="900ms">
+                        <div class="course__category__card_1 mb-24 mb-xl-0">
+                            <div class="course__category__card_text">
+                                <a href="fakultas-FTI.html" class="course__category__card_title h4 mb-16">Manajemen
+                                    Informatika</a>
+                                <p class="mb-40">Menggabungkan keahlian teknologi dan manajemen dalam merancang solusi digital yang efisien dan inovatif.</p>
+                            </div>
+                            <img src="assets/media/fakultas/resource/fakultas-fti-3d-2.png" alt="" class="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="courses-1 py-60">
+            <div class="container">
+                <div class="section-title mb-48">
+                    <div class="heading">
+                        <h6 class="color-primary mb-8">Program Studi Unggulan</h6>
+                        <h2>UCIC - Membangun <br> Generasi Digital <span class="fm-sec">Berintegritas</span></h2>
+                    </div>
+                    <a href="fakultas-FTI.html" class="educate-btn d-md-block d-none">
+                        <span class="educate-btn__curve"></span>Lihat Semua
+                    </a>
+                </div>
+            </div>
+
+            <div class="courses-slider">
+                <div class="course__card mb-24">
+                    <div class="course__card__content">
+                        <div class="left__block">
+                            <h4 class="mb-4p"><a href="#">S1 - Computerized Accounting Information Systems</a></h4>
+                            <p class="h6 mb-24">Universitas Catur Insan Cendekia</p>
+                            <div class="author_card">
+                                <img src="assets/media/fakultas/mahasiswa/mahasiswa-cic-1.png" alt="Nopi Fitrianiingsih" class="author_img">
+                                <div class="author_text_block">
+                                    <a href="fakultas-FEB.html" class="h6 mb-4p">Nopi Fitrianiingsih</a>
+                                    <p>Lulusan Terbaik S1 Akuntansi SI (GPA 3.95)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right__block">
+                            <div class="price_block mb-16">
+                                <div class="price_vector">
+                                    <img src="assets/media/shapes/vector-group.png" alt="">
+                                </div>
+                                <span class="h3 color-white">S1</span>
+                            </div>
+                            <a href="fakultas-FEB.html" class="educate-btn sm mx-xl-auto me-2">
+                                <span class="educate-btn__curve"></span>Gabung
+                            </a>
+                        </div>
+                        <img src="assets/media/shapes/vector-1.png" alt="" class="bottom_vector">
+                    </div>
+                </div>
+
+                <div class="course__card mb-24">
+                    <div class="course__card__content">
+                        <div class="left__block">
+                            <h4 class="mb-4p"><a href="#">S1 - Informatics Engineering</a></h4>
+                            <p class="h6 mb-24">Universitas Catur Insan Cendekia</p>
+                            <div class="author_card">
+                                <img src="assets/media/fakultas/mahasiswa/mahasiswa-cic-2.png" alt="Kristianto" class="author_img">
+                                <div class="author_text_block">
+                                    <a href="fakultas-FTI.html" class="h6 mb-4p">Kristianto</a>
+                                    <p>Lulusan Terbaik S1 Informatika Tahun 2016 (GPA 4.00)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right__block">
+                            <div class="price_block mb-16">
+                                <div class="price_vector">
+                                    <img src="assets/media/shapes/vector-group.png" alt="">
+                                </div>
+                                <span class="h3 color-white">S1</span>
+                            </div>
+                            <a href="fakultas-FTI.html" class="educate-btn sm mx-xl-auto me-2">
+                                <span class="educate-btn__curve"></span>Gabung
+                            </a>
+                        </div>
+                        <img src="assets/media/shapes/vector-1.png" alt="" class="bottom_vector">
+                    </div>
+                </div>
+
+                <div class="course__card mb-24">
+                    <div class="course__card__content">
+                        <div class="left__block">
+                            <h4 class="mb-4p"><a href="#">S1 - Informatics Engineering</a></h4>
+                            <p class="h6 mb-24">Universitas Catur Insan Cendekia</p>
+                            <div class="author_card">
+                                <img src="assets/media/fakultas/mahasiswa/mahasiswa-cic-3.png" alt="Suhadi Parman" class="author_img">
+                                <div class="author_text_block">
+                                    <a href="fakultas-FTI.html" class="h6 mb-4p">Noni Apriliani</a>
+                                    <p>Lulusan Terbaik S1 Informatics Engineering (GPA 4.00)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right__block">
+                            <div class="price_block mb-16">
+                                <div class="price_vector">
+                                    <img src="assets/media/shapes/vector-group.png" alt="">
+                                </div>
+                                <span class="h3 color-white">S1</span>
+                            </div>
+                            <a href="fakultas-FTI.html" class="educate-btn sm mx-xl-auto me-2">
+                                <span class="educate-btn__curve"></span>Gabung
+                            </a>
+                        </div>
+                        <img src="assets/media/shapes/vector-1.png" alt="" class="bottom_vector">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="team py-60">
+            <img src="assets/media/shapes/dots-1.png" alt="" class="dots">
+            <img src="assets/media/icons/3dtag.png" alt="" class="tag">
+            <div class="row align-items-center">
+                <div class="col-xl-5">
+                    <div class="team_one__content mb-64 mb-xl-0">
+                        <div class="heading mb-16">
+                            <h6 class="color-primary mb-8">Dosen Mengajar</h6>
+                            <h2>Kenali Para Dosen <br> Profesional yang Membentuk <br> Masa Depan <span class="fm-sec">UCIC.</span>
+                            </h2>
+                        </div>
+                        <p class="mb-24">Dosen-dosen UCIC tidak hanya kompeten di bidangnya, tetapi juga berpengalaman dalam mengembangkan potensi mahasiswa melalui pembelajaran berbasis teknologi dan kewirausahaan.</p>
+                        <a href="dosen.html" class="educate-btn"><span class="educate-btn__curve"></span>Lihat Semua</a>
+                    </div>
+                </div>
+                <div class="col-xl-7">
+                    <div class="team-slider py-60 ms-2 ms-xl-0">
+                        <div class="team__card mb-24">
+                            <div class="team__img_block">
+                                <img src="assets/media/dosen/dosenpria.png" alt="" class="team_img">
+                                <div class="team__content_block">
+                                    <div class="team__text_block">
+                                        <h5 class="mb-8"><a href="dosen.html">Aditya Kurniawan Chandra, B.Com (Acc & Fin), M.M.</a></h5>
+                                        <ul class="team__info unstyled mb-16">
+                                            <li><i class="fal fa-graduation-cap"></i>Ekonomi & Bisnis</li>
+                                        </ul>
+                                        <p class="team_info_text mb-24">Dosen pada Program Studi Akuntansi (Fakultas Ekonomi & Bisnis)</p>
+                                        <img src="assets/media/shapes/feture-bg-shape.png" alt="" class="text_block_bg_shape">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team__card mb-24">
+                            <div class="team__img_block">
+                                <img src="assets/media/dosen/dosenpria.png" alt="" class="team_img">
+                                <div class="team__content_block">
+                                    <div class="team__text_block">
+                                        <h5 class="mb-8"><a href="dosen.html">Agung Supriyadi, S.E., M.Ak.</a></h5>
+                                        <ul class="team__info unstyled mb-16">
+                                            <li><i class="fal fa-graduation-cap"></i>Akuntansi</li>
+                                        </ul>
+                                        <p class="team_info_text mb-24">Dosen pada Program Studi Akuntansi, unit Akreditasi & Mutu</p>
+                                        <img src="assets/media/shapes/feture-bg-shape.png" alt="" class="text_block_bg_shape">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team__card mb-24">
+                            <div class="team__img_block">
+                                <img src="assets/media/dosen/dosenwanita.png" alt="" class="team_img">
+                                <div class="team__content_block">
+                                    <div class="team__text_block">
+                                        <h5 class="mb-8"><a href="dosen.html">Linda Norhan, S.T., M.M.</a></h5>
+                                        <ul class="team__info unstyled mb-16">
+                                            <li><i class="fal fa-graduation-cap"></i>Informatika</li>
+                                        </ul>
+                                        <p class="team_info_text mb-24">Sekretaris Prodi D3 Manajemen Informatika (Fakultas Teknologi Informasi)</p>
+                                        <img src="assets/media/shapes/feture-bg-shape.png" alt="" class="text_block_bg_shape">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team__card mb-24">
+                            <div class="team__img_block">
+                                <img src="assets/media/dosen/dosenwanita.png" alt="" class="team_img">
+                                <div class="team__content_block">
+                                    <div class="team__text_block">
+                                        <h5 class="mb-8"><a href="dosen.html">Dessy Kumala Dewi, S.E., M.Ak.</a></h5>
+                                        <ul class="team__info unstyled mb-16">
+                                            <li><i class="fal fa-graduation-cap"></i>Akuntansi</li>
+                                        </ul>
+                                        <p class="team_info_text mb-24">Dosen pada Program Studi Akuntansi</p>
+                                        <img src="assets/media/shapes/feture-bg-shape.png" alt="" class="text_block_bg_shape">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team__card mb-24">
+                            <div class="team__img_block">
+                                <img src="assets/media/dosen/dosenwanita.png" alt="" class="team_img">
+                                <div class="team__content_block">
+                                    <div class="team__text_block">
+                                        <h5 class="mb-8"><a href="dosen.html">Dewi Anggun Puspitarini, S.E., M.Ak. </a></h5>
+                                        <ul class="team__info unstyled mb-16">
+                                            <li><i class="fal fa-graduation-cap"></i>Akuntansi </li>
+                                        </ul>
+                                        <p class="team_info_text mb-24">Dosen pada Program Studi Akuntansi</p>
+                                        <img src="assets/media/shapes/feture-bg-shape.png" alt="" class="text_block_bg_shape">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="discount_banner">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-5">
+                        <div class="banner_text_block">
+                            <div class="title_block mb-16">
+                                <h2 class="title">Dapatkan
+                                    <span class="fm-sec">Beasiswa Spesial!
+                                        <img src="assets/media/shapes/line-vector.png" alt="" class="line_shape">
+                                        <img src="assets/media/shapes/mic-speaker.png" alt="" class="mic_speaker">
+                                    </span>
+                                </h2>
+                            </div>
+                            <h4 class="mb-12">Daftarkan Dirimu di UCIC Sekarang!</h4>
+                            <p class="mb-24">Bergabunglah bersama UCIC dan raih kesempatan beasiswa untuk mendukung pendidikanmu di bidang teknologi, desain, dan bisnis masa depan.</p>
+                            <a href="kontak.html" class="educate-btn"><span class="educate-btn__curve"></span>Daftar Sekarang</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-7">
+                        <div class="discount_countdown">
+                            <div class="dial">
+                                <ul class="top-remain">
+                                    <li class=" remain-count">02</li>
+                                    <li class=" remain-count">01</li>
+                                    <li class=" remain-count">00</li>
+                                </ul>
+                                <ul class="top-coming">
+                                    <li>02</li>
+                                    <li>01</li>
+                                    <li>00</li>
+                                </ul>
+                            </div>
+                            <img src="assets/media/shapes/paint-shape.png" alt="" class="paint_shape">
+                            <ul class="countdown unstyled">
+                                <li>
+                                    <h2>365</h2>
+                                    <h6>Days</h6>
+                                </li>
+                                <li>
+                                    <h2>24</h2>
+                                    <h6>Hrs</h6>
+                                </li>
+                                <li>
+                                    <h2>60</h2>
+                                    <h6>Min</h6>
+                                </li>
+                                <li>
+                                    <h2><span>60</span></h2>
+                                    <h6>Sec</h6>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials py-60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5">
+                        <div class="testimonials_text_block">
+                            <img src="assets/media/shapes/quote3d.png" alt="" class="quote_icon">
+                            <h6 class="color-primary mb-8">Testimoni</h6>
+                            <h2 class="mb-16">Cerita Mahasiswa! Komentar Inspiratif dari <span class="fm-sec">Civitas UCIC</span></h2>
+                            <p>Simak pengalaman seru dan inspiratif dari para mahasiswa UCIC. Dari perkuliahan yang menyenangkan hingga peluang karier yang terbuka luas — inilah kisah nyata dari mereka yang tumbuh bersama kampus technopreneur!</p>
+                            <img src="assets/media/shapes/vector-2.png" alt="" class="vector_hol">
+                            <img src="assets/media/shapes/dots-1.png" alt="" class="dots_group">
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-10 offset-xl-0 offset-lg-1">
+                        <div class="testimonials_slider_1_block">
+                            <img src="assets/media/shapes/bg-elements-1.png" alt="" class="bg_elements">
+                            <div class="testimonials_slider">
+                                <div class="card-block">
+                                    <div class="testimonial_card">
+                                        <div class="testimonial_card_img_block">
+                                            <img src="assets/media/dosen/dosenwanita.png" alt="" class="user_img" width="213" height="280">
+                                            <div class="quote_block"></div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78 64" fill="none" class="quote_mark">
+                                                <path
+                                                    d="M55.8684 63.0894C52.6269 63.0894 49.6698 62.606 46.997 61.6392C44.3242 60.6156 42.0495 59.2224 40.1729 57.4595C38.2963 55.6397 36.8177 53.4503 35.7372 50.8913C34.7136 48.3322 34.2018 45.4888 34.2018 42.3611C34.2018 39.1197 34.7705 35.736 35.9078 32.2102C37.1021 28.6845 38.8081 25.1302 41.0259 21.5476C43.2438 17.9649 45.9165 14.4391 49.0443 10.9702C52.2288 7.44441 55.8399 4.06079 59.8775 0.819336L69.6872 8.49646C67.8106 10.43 66.1045 12.2782 64.5691 14.0411C63.0905 15.8039 61.7257 17.5668 60.4746 19.3297C59.2236 21.0926 58.0578 22.9124 56.9773 24.789C55.9537 26.6657 55.0154 28.656 54.1623 30.7601L77.3643 42.3611C77.3643 45.432 76.7672 48.2469 75.573 50.806C74.4356 53.365 72.9002 55.5544 70.9667 57.3742C69.0332 59.1939 66.7585 60.6156 64.1426 61.6392C61.5267 62.606 58.7686 63.0894 55.8684 63.0894ZM22.1666 63.0894C18.9251 63.0894 15.968 62.606 13.2952 61.6392C10.6224 60.6156 8.34773 59.2224 6.4711 57.4595C4.59447 55.6397 3.11591 53.4503 2.03543 50.8913C1.01181 48.3322 0.5 45.4888 0.5 42.3611C0.5 39.1197 1.06868 35.736 2.20603 32.2102C3.40025 28.6845 5.10628 25.1302 7.32411 21.5476C9.54195 17.9649 12.2147 14.4391 15.3424 10.9702C18.527 7.44441 22.1381 4.06079 26.1757 0.819336L35.9854 8.49646C34.1088 10.43 32.4027 12.2782 30.8673 14.0411C29.3887 15.8039 28.0239 17.5668 26.7728 19.3297C25.5217 21.0926 24.356 22.9124 23.2755 24.789C22.2519 26.6657 21.3135 28.656 20.4605 30.7601L43.6625 42.3611C43.6625 45.432 43.0654 48.2469 41.8712 50.806C40.7338 53.365 39.1984 55.5544 37.2649 57.3742C35.3314 59.1939 33.0567 60.6156 30.4408 61.6392C27.8249 62.606 25.0668 63.0894 22.1666 63.0894Z" />
+                                            </svg>
+                                        </div>
+                                        <div class="testimonial_card_content_block">
+                                            <div class="testimonial">
+                                                <h4 class="mb-16">Kiki Amelia</h4>
+                                                <span class="mb-16"><i class="fas fa-star"></i><i
+                                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                        class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                                <p class="review_text">
+                                                    Saya sangat terkesan dengan tampilan dan isi website Universitas Catur Insan Cendekia (UCIC). Desainnya menarik, profesional, dan mudah dinavigasi. Informasi mengenai program studi, blog kampus, hingga pendaftaran mahasiswa baru sangat lengkap dan mudah
+                                                    ditemukan.
+                                                </p>
+                                            </div>
+                                            <img src="assets/media/shapes/bg-elements-2.png" alt="" class="bottom_shape">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-block">
+                                    <div class="testimonial_card">
+                                        <div class="testimonial_card_img_block">
+                                            <img src="assets/media/dosen/dosenwanita.png" alt="" class="user_img" width="213" height="280">
+                                            <div class="quote_block"></div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78 64" fill="none" class="quote_mark">
+                                                <path
+                                                    d="M55.8684 63.0894C52.6269 63.0894 49.6698 62.606 46.997 61.6392C44.3242 60.6156 42.0495 59.2224 40.1729 57.4595C38.2963 55.6397 36.8177 53.4503 35.7372 50.8913C34.7136 48.3322 34.2018 45.4888 34.2018 42.3611C34.2018 39.1197 34.7705 35.736 35.9078 32.2102C37.1021 28.6845 38.8081 25.1302 41.0259 21.5476C43.2438 17.9649 45.9165 14.4391 49.0443 10.9702C52.2288 7.44441 55.8399 4.06079 59.8775 0.819336L69.6872 8.49646C67.8106 10.43 66.1045 12.2782 64.5691 14.0411C63.0905 15.8039 61.7257 17.5668 60.4746 19.3297C59.2236 21.0926 58.0578 22.9124 56.9773 24.789C55.9537 26.6657 55.0154 28.656 54.1623 30.7601L77.3643 42.3611C77.3643 45.432 76.7672 48.2469 75.573 50.806C74.4356 53.365 72.9002 55.5544 70.9667 57.3742C69.0332 59.1939 66.7585 60.6156 64.1426 61.6392C61.5267 62.606 58.7686 63.0894 55.8684 63.0894ZM22.1666 63.0894C18.9251 63.0894 15.968 62.606 13.2952 61.6392C10.6224 60.6156 8.34773 59.2224 6.4711 57.4595C4.59447 55.6397 3.11591 53.4503 2.03543 50.8913C1.01181 48.3322 0.5 45.4888 0.5 42.3611C0.5 39.1197 1.06868 35.736 2.20603 32.2102C3.40025 28.6845 5.10628 25.1302 7.32411 21.5476C9.54195 17.9649 12.2147 14.4391 15.3424 10.9702C18.527 7.44441 22.1381 4.06079 26.1757 0.819336L35.9854 8.49646C34.1088 10.43 32.4027 12.2782 30.8673 14.0411C29.3887 15.8039 28.0239 17.5668 26.7728 19.3297C25.5217 21.0926 24.356 22.9124 23.2755 24.789C22.2519 26.6657 21.3135 28.656 20.4605 30.7601L43.6625 42.3611C43.6625 45.432 43.0654 48.2469 41.8712 50.806C40.7338 53.365 39.1984 55.5544 37.2649 57.3742C35.3314 59.1939 33.0567 60.6156 30.4408 61.6392C27.8249 62.606 25.0668 63.0894 22.1666 63.0894Z" />
+                                            </svg>
+                                        </div>
+                                        <div class="testimonial_card_content_block">
+                                            <div class="testimonial">
+                                                <h4 class="mb-16">Aliya Nur</h4>
+                                                <span class="mb-16"><i class="fas fa-star"></i><i
+                                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                        class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                                <p class="review_text">
+                                                    Kalau kamu cari kampus yang seru, dan bikin siap kerja, UNIVERSITAS CIC jawabannya! Di sini, belajarnya asyik karena dosen-dosennya keren dan bikin kita paham banget. Fasilitasnya juga modern, jadi nyaman buat eksplorasi bakat dan minat. Yang paling penting,
+                                                    teman-temannya supportif dan banyak kegiatan positif yang bikin pengalaman kuliah makin berwarna. Pokoknya, UCIC itu tempat yang pas buat kamu berkembang dan meraih impian. Dijamin nggak nyesel deh!
+                                                    Ayo gabung!</p>
+                                            </div>
+                                            <img src="assets/media/shapes/bg-elements-2.png" alt="" class="bottom_shape">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-block">
+                                    <div class="testimonial_card">
+                                        <div class="testimonial_card_img_block">
+                                            <img src="assets/media/dosen/dosenpria.png" alt="" class="user_img" width="213" height="280">
+                                            <div class="quote_block"></div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78 64" fill="none" class="quote_mark">
+                                                <path
+                                                    d="M55.8684 63.0894C52.6269 63.0894 49.6698 62.606 46.997 61.6392C44.3242 60.6156 42.0495 59.2224 40.1729 57.4595C38.2963 55.6397 36.8177 53.4503 35.7372 50.8913C34.7136 48.3322 34.2018 45.4888 34.2018 42.3611C34.2018 39.1197 34.7705 35.736 35.9078 32.2102C37.1021 28.6845 38.8081 25.1302 41.0259 21.5476C43.2438 17.9649 45.9165 14.4391 49.0443 10.9702C52.2288 7.44441 55.8399 4.06079 59.8775 0.819336L69.6872 8.49646C67.8106 10.43 66.1045 12.2782 64.5691 14.0411C63.0905 15.8039 61.7257 17.5668 60.4746 19.3297C59.2236 21.0926 58.0578 22.9124 56.9773 24.789C55.9537 26.6657 55.0154 28.656 54.1623 30.7601L77.3643 42.3611C77.3643 45.432 76.7672 48.2469 75.573 50.806C74.4356 53.365 72.9002 55.5544 70.9667 57.3742C69.0332 59.1939 66.7585 60.6156 64.1426 61.6392C61.5267 62.606 58.7686 63.0894 55.8684 63.0894ZM22.1666 63.0894C18.9251 63.0894 15.968 62.606 13.2952 61.6392C10.6224 60.6156 8.34773 59.2224 6.4711 57.4595C4.59447 55.6397 3.11591 53.4503 2.03543 50.8913C1.01181 48.3322 0.5 45.4888 0.5 42.3611C0.5 39.1197 1.06868 35.736 2.20603 32.2102C3.40025 28.6845 5.10628 25.1302 7.32411 21.5476C9.54195 17.9649 12.2147 14.4391 15.3424 10.9702C18.527 7.44441 22.1381 4.06079 26.1757 0.819336L35.9854 8.49646C34.1088 10.43 32.4027 12.2782 30.8673 14.0411C29.3887 15.8039 28.0239 17.5668 26.7728 19.3297C25.5217 21.0926 24.356 22.9124 23.2755 24.789C22.2519 26.6657 21.3135 28.656 20.4605 30.7601L43.6625 42.3611C43.6625 45.432 43.0654 48.2469 41.8712 50.806C40.7338 53.365 39.1984 55.5544 37.2649 57.3742C35.3314 59.1939 33.0567 60.6156 30.4408 61.6392C27.8249 62.606 25.0668 63.0894 22.1666 63.0894Z" />
+                                            </svg>
+                                        </div>
+                                        <div class="testimonial_card_content_block">
+                                            <div class="testimonial">
+                                                <h4 class="mb-16">Ilham Maulana Kanuri</h4>
+                                                <span class="mb-16"><i class="fas fa-star"></i><i
+                                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                        class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                                <p class="review_text">Universitas Catur Insan Cendekia (UCIC) merupakan salah satu perguruan tinggi yang terus berkembang dan berkomitmen dalam mencetak lulusan yang berkualitas serta siap bersaing di dunia kerja. Dengan berbagai
+                                                    keunggulan yang dimilikinya, UCIC menjadi pilihan tepat bagi calon mahasiswa yang ingin mendapatkan pendidikan tinggi yang berkualitas.</p>
+                                            </div>
+                                            <img src="assets/media/shapes/bg-elements-2.png" alt="" class="bottom_shape">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-60 ">
+            <div class="container">
+                <div class="section-title mb-48">
+                    <div class="heading">
+                        <h6 class="color-primary mb-8">Artikel</h6>
+                        <h2>Lihat Apa Yang Baru<br> <span class="fm-sec">Di Universitas Catur Insan Cendakia</span></h2>
+                    </div>
+                    <a href="#" class="educate-btn d-md-block d-none"><span
+                            class="educate-btn__curve"></span>Lihat Semua</a>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog_card mb-24 mb-xl-0">
+                            <div class="blog_card_img_block">
+                                <img src="assets/media/berita/artikel-cic-1.jpg" alt="">
+                                <p class="date">21 April 2025</p>
+                            </div>
+                            <div class="blog_card_text_block">
+                                <h5 class="mb-8"><a class="blog_title" href="#">Program Studi Sistem Informasi UCIC Raih Akreditasi “Baik Sekali” dari LAM INFOKOM
+                                </a></h5>
+                                <p class="mb-24">Cirebon, 9 April 2025 – Kabar menggembirakan datang dari Program Studi Sistem Informasi Universitas Catur Insan Cendekia (UCIC). Berdasarkan Keputusan LAM INFOKOM No. 077/SK/LAM-INFOKOM/Ak/S/IV/2025, program studi ini resmi
+                                    meraih peringkat Akreditasi Baik Sekali. Keputusan ini disahkan pada 9 April 2025 dan berlaku selama lima tahun ke depan, hingga 9 April 2030. Sertifikat ini diterbitkan oleh Lembaga Akreditasi Mandiri Informatika dan
+                                    Komputer (LAM INFOKOM) dan ditandatangani langsung oleh Ketua Dewan Eksekutif, Prof. Dra. Sri Hartati, M.Sc., Ph.D. Sebuah Capaian Hasil Kerja Bersama
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="author">
+                                        <h6 class="dark-gray"> </h6>
+                                    </div>
+                                    <a href="berita.html" class="h6 color-primary educate_link_btn">Selengkapnya<i
+                                            class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog_card mb-24 mb-xl-0">
+                            <div class="blog_card_img_block">
+                                <img src="assets/media/berita/artikel-cic-2.png" alt="">
+                                <p class="date">24 Maret 2025</p>
+                            </div>
+                            <div class="blog_card_text_block">
+                                <h5 class="mb-8"><a class="blog_title" href="#">Call For Paper 4th International Conference ICCIT 2025</a></h5>
+                                <p class="mb-24">Calling All researchers, Students, and Lecturers Opportunity to shine in the global academic spotlight! Present your research and get it indexed in Scopus and publish in IEEE Xplore, elevating your academic profile and
+                                    paving the way for future opportunities. Struggling with your thesis or final project? Showcase your work here to gain recognition and insights from leading experts, turning your hard work into impactful achievements.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="author">
+                                        <h6 class="dark-gray"></h6>
+                                    </div>
+                                    <a href="berita.html" class="h6 color-primary educate_link_btn">Selengkapnya<i
+                                            class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="blog_card">
+                            <div class="blog_card_img_block">
+                                <img src="assets/media/berita/artikel-cic-3.png" alt="">
+                                <p class="date">27 Februari 2025</p>
+                            </div>
+                            <div class="blog_card_text_block">
+                                <h5 class="mb-8"><a class="blog_title" href="#">EMOVICS 2025 Wadah Kreativitas Mahasiswa CIC dalam Membuat Film</a></h5>
+                                <p class="mb-24">Acara EMOVICS 2025 yang sangat dinantikan telah berhasil menampilkan serangkaian film pendek luar biasa karya mahasiswa dari Universitas Catur Insan Cendekia (UCIC). Acara yang digelar pada 27 Februari 2025 di Auditorium
+                                    UCIC ini menampilkan film-film karya mahasiswa dari berbagai jurusan, antara lain Present karya mahasiswa Jurusan Sistem Informasi (SI), Best Choice karya mahasiswa Jurusan Manajemen Informatika (MI), The Dialogue karya
+                                    mahasiswa Jurusan Desain Komunikasi Visual (DKV), dan Anomaly karya mahasiswa Jurusan Desain Komunikasi Visual (DKV). </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="author">
+                                        <h6 class="dark-gray"></h6>
+                                    </div>
+                                    <a href="berita.html" class="h6 color-primary educate_link_btn">Selengkapnya<i
+                                            class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-60 ">
+            <div class="container">
+                <div class="contact_banner">
+                    <h2 class="mb-8 color-white">Anda bertanya <br><span class="fm-sec">Kami menjawab</span></h2>
+                    <p class="mb-16 color-white">Punya pertanyaan seputar UCIC? Kami siap bantu jawab dengan cepat dan ramah. Hubungi kami sekarang!</p>
+                    <div class="mx-auto">
+                        <a href="tel:+6289512314188" class="h5 phone_number">+6289512314188</a>
+                    </div>
+                    <div class="icons">
+                        <img src="assets/media/shapes/dots-1.png" alt="" class="element-1">
+                        <img src="assets/media/shapes/vector-3.png" alt="" class="element-2">
+                        <img src="assets/media/shapes/paint.png" alt="" class="element-3">
+                        <img src="assets/media/shapes/vector-4.png" alt="" class="element-5">
+                        <img src="assets/media/shapes/dots-1.png" alt="" class="element-4">
+                        <img src="assets/media/shapes/tag.png" alt="" class="element-6">
+                        <img src="assets/media/shapes/errow.png" alt="" class="element-7">
+                        <img src="assets/media/shapes/circle-lines.png" alt="" class="element-8">
+                        <img src="assets/media/shapes/mic-speaker.png" alt="" class="element-9">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer_main py-60">
+                <img src="assets/media/shapes/vector-7.png" alt="" class="vector_shape">
+                <img src="assets/media/shapes/dots-1.png" alt="" class="dots">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-3">
+                            <div class="footer_widget">
+                                <a href="index.html" class="mb-8">
+                                    <img src="assets/media/resource-cic/cic-logo.png" alt="Logo UCIC">
+                                </a>
+                                <p class="description_text">
+                                    Universitas CIC Cirebon adalah kampus modern yang berfokus pada pendidikan teknologi, bisnis, dan kewirausahaan.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-sm-6">
+                            <div class="footer_widget">
+                                <h5 class="medium-black mb-16">Tautan Cepat</h5>
+                                <ul class="unstyled list">
+                                    <li><a href="index.html"><i class="fad fa-chevron-right"></i>Beranda</a></li>
+                                    <li><a href="kontak.html"><i class="fad fa-chevron-right"></i>Pendaftaran</a></li>
+                                    <li><a href="berita.html"><i class="fad fa-chevron-right"></i>Berita & Acara</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-sm-6">
+                            <div class="footer_widget">
+                                <h5 class="medium-black mb-16">Jelajahi</h5>
+                                <ul class="unstyled list">
+                                    <li><a href="about.html"><i class="fad fa-chevron-right"></i>Tentang UCIC</a></li>
+                                    <li><a href="galeri.html"><i class="fad fa-chevron-right"></i>Galeri</a></li>
+                                    <li><a href="dosen.html"><i class="fad fa-chevron-right"></i>Dosen Mengajar</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-sm-6">
+                            <div class="footer_widget">
+                                <h5 class="medium-black mb-16">Informasi</h5>
+                                <ul class="unstyled list">
+                                    <li><a href="about.html"><i class="fad fa-chevron-right"></i>Program Studi</a></li>
+                                    <li><a href="https://my.cic.ac.id/portal/mahasiswa/"><i class="fad fa-chevron-right"></i>MyUCIC</a></li>
+                                    <li><a href="kontak.html"><i class="fad fa-chevron-right"></i>Hubungi Kami</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer_widget">
+                                <h5 class="medium-black mb-16">Kontak</h5>
+                                <ul class="unstyled list">
+                                    <li class="mb-16">
+                                        <i class="fal fa-map-marker-alt"></i>Jl. Kesambi No.202, Kesambi, Kota Cirebon
+                                    </li>
+                                    <li class="mb-16">
+                                        <a href="mailto:info@ucic.ac.id"><i class="fal fa-envelope"></i>info@cic.ac.id</a>
+                                    </li>
+                                    <li>
+                                        <a href="tel:+6289512314188"><i class="fal fa-phone-alt"></i>+6289512314188</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bottom-row">
+                        <ul class="unstyled social_icons_list">
+                            <li>
+                                <a href="https://www.tiktok.com/@universitas_cic" target="_blank">
+                                    <img src="assets/media/icons/brands/tiktok.png" alt="TikTok UCIC">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/universitas_cic" target="_blank">
+                                    <img src="assets/media/icons/brands/Instagram.png" alt="Instagram UCIC">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/page.stmik.cic" target="_blank">
+                                    <img src="assets/media/icons/brands/Facebook.png" alt="Facebook UCIC">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/@universitascic" target="_blank">
+                                    <img src="assets/media/icons/brands/youtube.png" alt="YouTube UCIC">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="copyright_row">
+                <p>©2025 Universitas Catur Insan Cendekia - Pusat Data & Informasi. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+        <div class="mobile-nav__wrapper">
+            <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+            <div class="mobile-nav__content">
+                <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+                <div class="logo-box">
+                    <a href="index.html" aria-label="logo image">
+                        <img src="assets/media/resource-cic/cic-logo.png" alt="UCIC">
+                    </a>
+                </div>
+                <div class="mobile-nav__container"></div>
+                <ul class="mobile-nav__contact list-unstyled">
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:info@ucic.ac.id">info@cic.ac.id</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-phone"></i>
+                        <a href="tel:+6289512314188">+6289512314188</a>
+                    </li>
+                </ul>
+                <div class="mobile-nav__social">
+                    <a href="https://www.tiktok.com/@universitas_cic"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/universitas_cic"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/page.stmik.cic"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/@universitascic"><i class="fab fa-youtube"></i></a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="search-popup">
+            <div class="search-popup__overlay search-toggler"></div>
+            <div class="search-popup__content">
+                <form role="search" method="get" class="search-popup__form" action="index.html">
+                    <input type="text" id="search" placeholder="Cari Seputar UCIC disini......">
+                    <button type="submit"><i class="fal fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <a href="#" class="scroll-top">
+            <svg class="scroll-top__circle" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+        </a>
+        <div id="waPopup" class="wa-popup">
+            <div class="wa-popup-text">Hubungi Kami</div>
+            <button class="wa-popup-close" onclick="closeWaPopup()">×</button>
+        </div>
+        <a href="https://wa.me/6289512314188" class="wa-float" target="_blank" id="waBtn">
+            <span class="whatsapp-ripple"></span>
+            <img src="assets/media/icons/brands/whatsap.png" alt="WhatsApp">
+        </a>
+
+
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/jquery-3.6.3.min.js"></script>
+        <script src="assets/js/jquery-appear.js"></script>
+        <script src="assets/js/jquery-validator.js"></script>
+        <script src="assets/js/jquery.countdown.min.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/slick.min.js"></script>
+        <script src="assets/js/tilt.jquery.js"></script>
+        <script src="assets/js/wow.js"></script>
+        <script src="assets/js/app.js"></script>
+        <script src="assets/js/wa.js"></script>
+
+</body>
+</html>

@@ -16,7 +16,22 @@
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css">
-
+    <style>
+        @media screen and (max-width: 768px) {
+            header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 9999;
+                margin-top: -33px;
+            }
+            header nav {
+                background-color: rgb(255, 255, 255) !important;
+                height: 103px;
+            }
+        }
+    </style>
 </head>
 
 <body class="custom-cursor locked">
@@ -60,6 +75,8 @@
                                             <li><a href="fasilitas.html">Fasilitas</a></li>
                                         </ul>
                                     </li>
+                                    <li><a href="biaya.html">Biaya</a></li>
+
                                     <li><a href="faq.html" class="active">Faq</a></li>
 
                                     <li><a href="kontak.html">Kontak</a></li>
@@ -151,8 +168,11 @@
                     <h2 class="mb-8 color-white">Anda bertanya <br><span class="fm-sec">Kami menjawab</span></h2>
                     <p class="mb-16 color-white">Punya pertanyaan seputar UCIC? Kami siap bantu jawab dengan cepat dan ramah. Hubungi kami sekarang!</p>
                     <div class="mx-auto">
-                        <a href="tel:+6289512314188" class="h5 phone_number">+6289512314188</a>
+                        <a href="https://wa.me/6281216700519" target="_blank" class="h5 phone_number">
+    Hubungi Kami
+  </a>
                     </div>
+
                     <div class="icons">
                         <img src="assets/media/shapes/dots-1.png" alt="" class="element-1">
                         <img src="assets/media/shapes/vector-3.png" alt="" class="element-2">
@@ -225,8 +245,11 @@
                                         <a href="mailto:info@ucic.ac.id"><i class="fal fa-envelope"></i>info@cic.ac.id</a>
                                     </li>
                                     <li>
-                                        <a href="tel:+6289512314188"><i class="fal fa-phone-alt"></i>+6289512314188</a>
+                                        <a href="https://wa.me/6281216700519" target="_blank">
+                                            <i class="fab fa-whatsapp"></i> Hubungi Kami
+                                        </a>
                                     </li>
+
                                 </ul>
                             </div>
                         </div>
@@ -281,9 +304,10 @@
                         <a href="mailto:info@ucic.ac.id">info@cic.ac.id</a>
                     </li>
                     <li>
-                        <i class="fa fa-phone"></i>
-                        <a href="tel:+6289512314188">+6289512314188</a>
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/6281216700519" target="_blank">Hubungi Kami</a>
                     </li>
+
                 </ul>
                 <div class="mobile-nav__social">
                     <a href="https://www.tiktok.com/@universitas_cic"><i class="fab fa-tiktok"></i></a>
@@ -320,7 +344,7 @@
                 let email = document.getElementById("email").value;
                 let message = document.getElementById("message").value;
 
-                let phoneNumber = "6289512314188";
+                let phoneNumber = "6281216700519";
 
                 let whatsappMessage =
                     "Halo, saya ingin mengajukan pertanyaan:\n\n" +
@@ -345,4 +369,5 @@
         <script src="assets/js/app.js"></script>
 
 </body>
+
 </html>

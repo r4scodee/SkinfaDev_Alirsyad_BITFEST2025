@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Kontak - Catur Insan Cendekia University Cirebon</title>
+    <title>Fakta Menarik - Catur Insan Cendekia University Cirebon</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="assets/media/favicon.png">
 
@@ -30,6 +30,89 @@
                 background-color: rgb(255, 255, 255) !important;
                 height: 103px;
             }
+        }
+        
+        .pdf-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 5rem 0;
+        }
+        
+        .pdf-container {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .pdf-container:hover {
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        .pdf-header {
+            background: var(--gradient);
+            color: white;
+            padding: 1.5rem 2rem;
+        }
+        
+        .pdf-title h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: white;
+        }
+        
+        .pdf-wrapper {
+            position: relative;
+            background: #f8f9fa;
+        }
+        
+        .pdf-loading {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            z-index: 10;
+            height: 800px;
+        }
+        
+        .loading-spinner p {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+        
+        .pdf-error {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            z-index: 10;
+        }
+        
+        .error-content {
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .error-content i {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        iframe {
+            border-radius: 0 0 20px 20px;
+            transition: opacity 0.3s ease;
         }
     </style>
 </head>
@@ -75,11 +158,11 @@
                                             <li><a href="fasilitas.html">Fasilitas</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="biaya.html">Biaya</a></li>
+                                    <li><a href="biaya.html" class="active">Biaya</a></li>
 
                                     <li><a href="faq.html">Faq</a></li>
 
-                                    <li><a href="kontak.html" class="active">Kontak</a></li>
+                                    <li><a href="kontak.html">Kontak</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -87,7 +170,6 @@
                             <a href="#" class="main-menu__search search-toggler">
                                 <i class="fal fa-search"></i>
                             </a>
-
                             <a href="kontak.html" class="educate-btn sm d-xl-flex d-none"><span
                                     class="educate-btn__curve"></span>Daftar Sekarang</a>
                             <a href="#" class="main-menu__toggler mobile-nav__toggler">
@@ -106,7 +188,7 @@
             <div class="container">
                 <div class="content">
                     <div class="title">
-                        <h1>Hubungi Kami</h1>
+                        <h1>Detail Biaya Kuliah</h1>
                         <img src="assets/media/shapes/tag-2.png" alt="" class="tag">
                     </div>
                     <div class="educate-tilt" data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 2, "speed": 700, "scale": 1 }'>
@@ -117,72 +199,98 @@
             </div>
         </section>
 
-        <section class="py-60">
+
+
+
+        <section id="payment-info" class="pdf-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 mb-24 mb-lg-0">
-                        <h6 class="color-primary mb-8"> Formulir Kontak</h6>
-                        <h2 class="mb-16">Tulis Pesan Kapan Saja,<br>Kami <span class="fm-sec">Siap Membantu!</span></h2>
-                        <p class="mb-32">Silakan isi formulir di bawah ini untuk menghubungi kami. Kami akan segera merespons pesan Anda.</p>
-                        <form id="whatsapp-form" class="contact-form form-validator">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="mb-24">
-                                        <input type="text" class="form-control p_lg" id="name" name="name" required placeholder="Nama Depan">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="mb-24">
-                                        <input type="text" class="form-control p_lg" id="last-name" name="last-name" required placeholder="Nama Belakang">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="mb-24">
-                                        <input type="email" class="form-control p_lg" id="email" name="email" required placeholder="Email">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="mb-24">
-                                        <input type="text" class="form-control p_lg" id="subject" name="subject" required placeholder="Subjek Pesan">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mb-24">
-                                <textarea class="form-control p_lg" id="detail-message" name="message" rows="5" required placeholder="Tulis pesan Anda di sini..."></textarea>
-                            </div>
-                            <div class="text-end">
-                                <button type="submit" class="educate-btn"><span class="educate-btn__curve"></span>Kirim Pesan</button>
-                            </div>
-                        </form>
+                    <div class="col-12">
+                        <div class="pdf-container" data-aos="fade-up">
 
-                        <script>
-                            document.getElementById("whatsapp-form").addEventListener("submit", function(e) {
-                                e.preventDefault(); // Biar tidak reload
-                                let name = document.getElementById("name").value;
-                                let lastName = document.getElementById("last-name").value;
-                                let email = document.getElementById("email").value;
-                                let subject = document.getElementById("subject").value;
-                                let message = document.getElementById("detail-message").value;
+                            <!-- Header -->
+                            <div class="pdf-header" style="background: #0352a1;">
+                                <div class="d-flex align-items-center justify-content-between flex-wrap">
 
-                                let fullMessage =
-                                    `*Formulir Kontak Baru:*
-                                    Nama: ${name} ${lastName}
-                                    Email: ${email}
-                                    Subjek: ${subject}
-                                    Pesan:
-                                    ${message}`;
-                                let whatsappURL = "https://wa.me/6281216700519?text=" + encodeURIComponent(fullMessage);
-                                window.open(whatsappURL, "_blank");
-                            });
-                        </script>
+                                    <!-- Title -->
+                                    <div class="pdf-title d-flex align-items-center">
+                                        <i class="fa-solid fa-file-pdf text-danger me-2 fs-3"></i>
+                                        <div>
+                                            <h3 class="mb-0 text-white">Dokumen Biaya Kuliah</h3>
+                                            <p class="mb-0 opacity-75" style="color: white;">Informasi lengkap biaya kuliah semua program studi</p>
+                                        </div>
+                                    </div>
 
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="educate-tilt" data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 2, "speed": 700, "scale": 1 }'>
-                            <img src="assets/media/resource-cic/img-kontak.png" alt="">
+                                    <!-- Actions (sejajar) -->
+                                    <div class="pdf-actions mt-2 mt-md-0 d-flex align-items-center">
+                                        <button class="btn btn-light btn-sm me-2 d-flex align-items-center" onclick="refreshPDF()">
+        <i class="fa-solid fa-rotate-right me-1"></i> Refresh
+      </button>
+                                        <a href="https://drive.google.com/file/d/11l-FyproT7K31THy9zv3HFJcC0D5sAg3/preview" class="btn btn-light btn-sm d-flex align-items-center" target="_blank">
+                                            <i class="fa-solid fa-up-right-from-square me-1"></i> Buka di Tab Baru
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- PDF Wrapper -->
+                            <div class="pdf-wrapper">
+                                <!-- Loading -->
+                                <div class="pdf-loading" id="pdfLoading">
+                                    <div class="loading-spinner text-center">
+                                        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;">
+                                            <span class="visually-hidden">Loading...</span>
+                                        </div>
+                                        <p class="mt-3">Memuat dokumen PDF...</p>
+                                    </div>
+                                </div>
+
+                                <!-- PDF Frame -->
+                                <iframe id="pdfFrame" src="https://drive.google.com/file/d/11l-FyproT7K31THy9zv3HFJcC0D5sAg3/preview" width="100%" height="800" frameborder="0" onload="hidePDFLoading()" onerror="showPDFError()"></iframe>
+
+                                <!-- Error -->
+                                <div class="pdf-error" id="pdfError" style="display: none;">
+                                    <div class="error-content">
+                                        <i class="bi bi-exclamation-triangle-fill text-warning"></i>
+                                        <h5 class="mt-2">Tidak dapat memuat dokumen</h5>
+                                        <p>Silakan coba refresh atau buka di tab baru</p>
+                                        <button class="btn btn-primary" onclick="refreshPDF()">Coba Lagi</button>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="py-60 ">
+            <div class="container">
+                <div class="contact_banner">
+                    <h2 class="mb-8 color-white">Siap Bergabung dengan UCIC?</h2>
+                    <p class="mb-16 color-white">Mari wujudkan ide-ide hebatmu bersama tim profesional. Kesempatan terbaik dimulai dari satu langkah kecil.</p>
+                    <div class="mx-auto">
+                        <a href="https://api.whatsapp.com/send/?phone=6281216700519&text=Halo+kak%2C+apakah+benar+saya+bisa+mendapat+beasiswa+kuliah+di+UCIC%3F&type=phone_number&app_absent=0" target="_blank" class="h5 phone_number">
+    Daftar Sekarang!
+  </a>
+                    </div>
+
+                    <div class="icons">
+                        <img src="assets/media/shapes/dots-1.png" alt="" class="element-1">
+                        <img src="assets/media/shapes/vector-3.png" alt="" class="element-2">
+                        <img src="assets/media/shapes/paint.png" alt="" class="element-3">
+                        <img src="assets/media/shapes/vector-4.png" alt="" class="element-5">
+                        <img src="assets/media/shapes/dots-1.png" alt="" class="element-4">
+                        <img src="assets/media/shapes/tag.png" alt="" class="element-6">
+                        <img src="assets/media/shapes/errow.png" alt="" class="element-7">
+                        <img src="assets/media/shapes/circle-lines.png" alt="" class="element-8">
+                        <img src="assets/media/shapes/mic-speaker.png" alt="" class="element-9">
                     </div>
                 </div>
             </div>
@@ -320,7 +428,6 @@
         </div>
 
 
-
         <div class="search-popup">
             <div class="search-popup__overlay search-toggler"></div>
             <div class="search-popup__content">
@@ -331,11 +438,8 @@
             </div>
         </div>
 
-        <a href="#" class="scroll-top">
-            <svg class="scroll-top__circle" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
-        </a>
+
+
 
         <script src="assets/js/bootstrap.bundle.min.js"></script>
         <script src="assets/js/jquery-3.6.3.min.js"></script>
@@ -347,7 +451,60 @@
         <script src="assets/js/tilt.jquery.js"></script>
         <script src="assets/js/wow.js"></script>
         <script src="assets/js/app.js"></script>
+        <script>
+            function hidePDFLoading() {
+                document.getElementById('pdfLoading').style.display = 'none';
+            }
 
+            function showPDFError() {
+                document.getElementById('pdfLoading').style.display = 'none';
+                document.getElementById('pdfError').style.display = 'flex';
+            }
+
+            function refreshPDF() {
+                const iframe = document.getElementById('pdfFrame');
+                const loading = document.getElementById('pdfLoading');
+                const error = document.getElementById('pdfError');
+
+                loading.style.display = 'flex';
+                error.style.display = 'none';
+
+                iframe.src = iframe.src;
+            }
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            document.getElementById("whatsappForm").addEventListener("submit", function(e) {
+                e.preventDefault();
+
+                let name = document.getElementById("name").value;
+                let email = document.getElementById("email").value;
+                let message = document.getElementById("message").value;
+
+                let phoneNumber = "6281216700519";
+
+                let whatsappMessage =
+                    "Halo, saya ingin mengajukan pertanyaan:\n\n" +
+                    "*Nama:* " + name + "\n" +
+                    "*Email:* " + email + "\n" +
+                    "*Pesan:* " + message;
+
+                let encodedMessage = encodeURIComponent(whatsappMessage);
+
+                window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank");
+            });
+        </script>
 </body>
 
 </html>

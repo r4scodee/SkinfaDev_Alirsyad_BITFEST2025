@@ -16,7 +16,22 @@
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css">
-
+    <style>
+        @media screen and (max-width: 768px) {
+            header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 9999;
+                margin-top: -33px;
+            }
+            header nav {
+                background-color: rgb(255, 255, 255) !important;
+                height: 103px;
+            }
+        }
+    </style>
 </head>
 
 <body class="custom-cursor locked">
@@ -58,6 +73,8 @@
                                             <li><a href="fasilitas.html">Fasilitas</a></li>
                                         </ul>
                                     </li>
+                                    <li><a href="biaya.html">Biaya</a></li>
+
                                     <li><a href="faq.html">Faq</a></li>
 
                                     <li><a href="kontak.html">Kontak</a></li>
@@ -118,9 +135,17 @@
                             <div class="sidebar_block mb-32">
                                 <h5 class="mb-16">Kategori</h5>
                                 <div class="categories_tags">
-                                    <a href="">Belajar Online</a><a href="">Dosen Mengajar</a><a href="">Kegiatan</a><a href="">Prestasi</a><a href="">BitFest</a><a href="">Edukasi</a>
+                                    <a href="#" data-filter="all" class="active">Semua</a>
+                                    <a href="#" data-filter="Prestasi">Prestasi</a>
+                                    <a href="#" data-filter="Mutu Pendidikan">Mutu Pendidikan</a>
+                                    <a href="#" data-filter="ramadhan">ramadhan</a>
+                                    <a href="#" data-filter="Kerjasama">Kerjasama</a>
+                                    <a href="#" data-filter="BitFest">BitFest</a>
+                                    <a href="#" data-filter="Edukasi">Edukasi</a>
+                                    <a href="#" data-filter="Dosen Mengajar">Dosen Mengajar</a>
                                 </div>
                             </div>
+
                             <div class="sidebar_block">
                                 <h5 class="mb-16">Berita Populer</h5>
                                 <a href="https://www.cic.ac.id/artikel/" class="sidebar_blog_card mb-24">
@@ -158,25 +183,27 @@
                     </div>
                     <div class="col-lg-8">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 berita-item" data-title="Program Studi Sistem Informasi UCIC Raih Akreditasi Baik Sekali dari LAM INFOKOM" data-tags="ucic,akreditasi,prestasi,sistem informasi,lam infokom" data-category="Prestasi">
                                 <div class="blog_card mb-24">
                                     <div class="blog_card_img_block">
                                         <img src="assets/media/berita/artikel-cic-1.jpg" alt="artikel-1" width="624" height="522">
                                         <p class="date">21 April 2025</p>
                                     </div>
                                     <div class="blog_card_text_block">
-                                        <h5 class="mb-8"><a class="blog_title" href="https://www.cic.ac.id/artikel/program-studi-sistem-informasi-ucic-raih-akreditasi-baik-sekali-dari-lam-infokom.html">Program Studi Sistem Informasi UCIC Raih Akreditasi “Baik Sekali” dari LAM INFOKOM</a></h5>
-                                        <p class="mb-24">Cirebon, 9 April 2025 – Kabar menggembirakan datang dari Program Studi Sistem Informasi Universitas Catur Insan Cendekia (UCIC). Berdasarkan Keputusan LAM INFOKOM No. 077/SK/LAM-INFOKOM/Ak/S/IV/2025, program studi
-                                            ini resmi meraih peringkat Akreditasi Baik Sekali. Keputusan ini disahkan pada 9 April 2025 dan berlaku selama lima tahun ke depan, hingga 9 April 2030. Sertifikat ini diterbitkan oleh Lembaga Akreditasi Mandiri
-                                            Informatika dan Komputer (LAM INFOKOM) dan ditandatangani langsung oleh Ketua Dewan Eksekutif, Prof. Dra. Sri Hartati, M.Sc., Ph.D. Sebuah Capaian Hasil Kerja Bersama
-                                        </p>
+                                        <h5 class="mb-8">
+                                            <a class="blog_title" href="https://www.cic.ac.id/artikel/program-studi-sistem-informasi-ucic-raih-akreditasi-baik-sekali-dari-lam-infokom.html">
+                    Program Studi Sistem Informasi UCIC Raih Akreditasi “Baik Sekali” dari LAM INFOKOM
+                </a>
+                                        </h5>
+                                        <p class="mb-24">Cirebon, 9 April 2025 – Kabar menggembirakan ...</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <a href="https://www.cic.ac.id/artikel/program-studi-sistem-informasi-ucic-raih-akreditasi-baik-sekali-dari-lam-infokom.html" class="h6 color-primary educate_link_btn">Selengkapnya<i class="fas fa-chevron-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+
+                            <div class="col-md-6 berita-item" data-title="Asesmen Lapangan LAMEMBA di UCIC" data-tags="ucic,asesmen,lamemba,manajemen bisnis,akreditasi" data-category="Mutu Pendidikan">
                                 <div class="blog_card mb-24">
                                     <div class="blog_card_img_block">
                                         <img src="assets/media/berita/artikel-cic-8.jpg" alt="">
@@ -191,7 +218,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+
+                            <div class="col-md-6 berita-item" data-title="Marhaban Ya Ramadhan" data-tags="ucic,ramadhan,ucapan,rektor,ibadah" data-category="ramadhan">
                                 <div class="blog_card mb-24">
                                     <div class="blog_card_img_block">
                                         <img src="assets/media/berita/artikel-cic-7.png" alt="">
@@ -199,15 +227,15 @@
                                     </div>
                                     <div class="blog_card_text_block">
                                         <h5 class="mb-8"><a class="blog_title" href="https://www.cic.ac.id/artikel/marhaban-ya-ramadhan.html">Marhaban Ya Ramadhan</a></h5>
-                                        <p class="mb-24">Rektor dan Civitas Akademika Universitas Catur Insan Cendekia mengucapkan Selamat Menjalankan Ibadah Puasa di bulan suci Ramadhan 1446 H/2025 M.
-                                        </p>
+                                        <p class="mb-24">Rektor dan Civitas Akademika Universitas Catur Insan Cendekia mengucapkan Selamat Menjalankan Ibadah Puasa di bulan suci Ramadhan 1446 H/2025 M.</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <a href="https://www.cic.ac.id/artikel/marhaban-ya-ramadhan.html" class="h6 color-primary educate_link_btn">Selengkapnya<i class="fas fa-chevron-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+
+                            <div class="col-md-6 berita-item" data-title="UCIC X Griya Karya Harapanku" data-tags="ucic,kerjasama,sosial,difabel,cirebon" data-category="Kerjasama">
                                 <div class="blog_card mb-24">
                                     <div class="blog_card_img_block">
                                         <img src="assets/media/berita/artikel-cic-4.jpg" alt="">
@@ -215,14 +243,14 @@
                                     </div>
                                     <div class="blog_card_text_block">
                                         <h5 class="mb-8"><a class="blog_title" href="https://www.cic.ac.id/artikel/">UCIC X Griya Karya Harapanku</a></h5>
-                                        <p class="mb-24">UCIC berkolaborasi dengan Griya Karya Harapanku untuk mendukung pemberdayaan komunitas difabel di Cirebon melalui pelatihan dan kegiatan sosial.
-                                        </p>
+                                        <p class="mb-24">UCIC berkolaborasi dengan Griya Karya Harapanku untuk mendukung pemberdayaan komunitas difabel di Cirebon melalui pelatihan dan kegiatan sosial.</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <a href="https://www.cic.ac.id/artikel/" class="h6 color-primary educate_link_btn">Selengkapnya<i class="fas fa-chevron-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -286,8 +314,8 @@
                                         <a href="mailto:info@ucic.ac.id"><i class="fal fa-envelope"></i>info@cic.ac.id</a>
                                     </li>
                                     <li>
-                                        <a href="https://wa.me/6289512314188" target="_blank">
-                                            <i class="fab fa-whatsapp"></i> +6289512314188
+                                        <a href="https://wa.me/6281216700519" target="_blank">
+                                            <i class="fab fa-whatsapp"></i> Hubungi Kami
                                         </a>
                                     </li>
 
@@ -346,7 +374,7 @@
                     </li>
                     <li>
                         <i class="fab fa-whatsapp"></i>
-                        <a href="https://wa.me/6289512314188" target="_blank">+6289512314188</a>
+                        <a href="https://wa.me/6281216700519" target="_blank">Hubungi Kami</a>
                     </li>
 
                 </ul>
@@ -386,6 +414,77 @@
         <script src="assets/js/tilt.jquery.js"></script>
         <script src="assets/js/wow.js"></script>
         <script src="assets/js/app.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const searchInput = document.querySelector(".search_bar input");
+                const tagElements = document.querySelectorAll(".tags span");
+                const beritaItems = document.querySelectorAll(".berita-item");
+
+                function filterBerita(keyword) {
+                    beritaItems.forEach(item => {
+                        const title = item.getAttribute("data-title").toLowerCase();
+                        const tags = item.getAttribute("data-tags").toLowerCase();
+
+                        if (title.includes(keyword) || tags.includes(keyword)) {
+                            item.style.display = "block";
+                        } else {
+                            item.style.display = "none";
+                        }
+                    });
+                }
+
+                searchInput.addEventListener("keyup", function() {
+                    const keyword = this.value.toLowerCase();
+                    filterBerita(keyword);
+                });
+
+                tagElements.forEach(tag => {
+                    tag.style.cursor = "pointer";
+                    tag.addEventListener("click", function() {
+                        const keyword = this.textContent.replace("#", "").toLowerCase();
+                        searchInput.value = "#" + keyword;
+                        filterBerita(keyword);
+                    });
+                });
+            });
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const links = document.querySelectorAll(".categories_tags a");
+                const items = document.querySelectorAll(".berita-item");
+
+                const norm = (s) => (s || "").toLowerCase().trim();
+
+                function showAll() {
+                    items.forEach(it => it.style.removeProperty("display"));
+                }
+
+                function applyFilter(filter) {
+                    if (filter === "all") {
+                        showAll();
+                        return;
+                    }
+                    const f = norm(filter);
+
+                    items.forEach(item => {
+                        const cat = norm(item.dataset.category);
+                        const tags = (item.dataset.tags || "")
+                            .split(",").map(t => norm(t));
+                        const match = (cat === f) || tags.includes(f);
+                        item.style.display = match ? "" : "none";
+                    });
+                }
+
+                links.forEach(a => {
+                    a.addEventListener("click", (e) => {
+                        e.preventDefault();
+                        links.forEach(x => x.classList.remove("active"));
+                        a.classList.add("active");
+                        applyFilter(a.dataset.filter);
+                    });
+                });
+            });
+        </script>
 
 </body>
 

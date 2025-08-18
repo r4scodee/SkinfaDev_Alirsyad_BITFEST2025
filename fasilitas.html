@@ -16,7 +16,22 @@
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css">
-
+    <style>
+        @media screen and (max-width: 768px) {
+            header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 9999;
+                margin-top: -33px;
+            }
+            header nav {
+                background-color: rgb(255, 255, 255) !important;
+                height: 103px;
+            }
+        }
+    </style>
 </head>
 
 <body class="custom-cursor locked">
@@ -60,6 +75,8 @@
                                             <li><a href="fasilitas.html" class="active">Fasilitas</a></li>
                                         </ul>
                                     </li>
+                                    <li><a href="biaya.html">Biaya</a></li>
+
                                     <li><a href="faq.html">Faq</a></li>
 
                                     <li><a href="kontak.html">Kontak</a></li>
@@ -236,8 +253,11 @@
                                         <a href="mailto:info@ucic.ac.id"><i class="fal fa-envelope"></i>info@cic.ac.id</a>
                                     </li>
                                     <li>
-                                        <a href="tel:+6289512314188"><i class="fal fa-phone-alt"></i>+6289512314188</a>
+                                        <a href="https://wa.me/6281216700519" target="_blank">
+                                            <i class="fab fa-whatsapp"></i> Hubungi Kami
+                                        </a>
                                     </li>
+
                                 </ul>
                             </div>
                         </div>
@@ -292,9 +312,10 @@
                         <a href="mailto:info@ucic.ac.id">info@cic.ac.id</a>
                     </li>
                     <li>
-                        <i class="fa fa-phone"></i>
-                        <a href="tel:+6289512314188">+6289512314188</a>
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/6281216700519" target="_blank">Hubungi Kami</a>
                     </li>
+
                 </ul>
                 <div class="mobile-nav__social">
                     <a href="https://www.tiktok.com/@universitas_cic"><i class="fab fa-tiktok"></i></a>
@@ -335,4 +356,5 @@
         <script src="assets/js/app.js"></script>
 
 </body>
+
 </html>

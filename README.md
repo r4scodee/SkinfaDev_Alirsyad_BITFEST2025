@@ -95,4 +95,4 @@ SkinfaDev_Alirsyad_BitFest2025/
 3. Buka file `index.html` lewat browser untuk menjalankan website.
 
 ## Dokumentasi Website
-<img width="1366" height="702" alt="image" src="https://github.com/user-attachments/assets/7ee8eed0-47a8-4093-8fc8-ed343296ed9a" />
+<img width="1366" height="702" alt="image" src="assets/dokumentasi/dokumentasi.png" />

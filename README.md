@@ -34,14 +34,17 @@ SkinfaDev_Alirsyad_BitFest2025/
 │ │ ├─ jquery.magnific-popup.css
 │ │ ├─ odometer.min.css
 │ │ └─ slick.css
+| |
 │ ├─ fontawesome/
 │ │ └─ font-awesome.css
+| |
 │ ├─ fonts/
 │ │ ├─ fa-brands-400.woff2
 │ │ ├─ fa-duotone-900.woff2
 │ │ ├─ fa-light-300.woff2
 │ │ ├─ fa-regular-400.woff2
 │ │ └─ fa-solid-900.woff2
+| |
 │ └─ js/
 │ ├─ app.js
 │ ├─ bootstrap.bundle.min.js

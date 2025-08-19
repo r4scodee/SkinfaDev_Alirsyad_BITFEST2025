@@ -23,7 +23,8 @@ Website ini dirancang untuk menampilkan profil Universitas CIC secara informatif
 - **Bootstrap** → Framework utama untuk tampilan responsif
 
 ## Struktur Project
-```SkinfaDev_Alirsyad_BitFest2025/
+```
+SkinfaDev_Alirsyad_BitFest2025/
 │
 ├─ assets/
 │ ├─ css/

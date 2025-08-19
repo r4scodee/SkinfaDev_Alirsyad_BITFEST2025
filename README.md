@@ -22,6 +22,68 @@ Website ini dirancang untuk menampilkan profil Universitas CIC secara informatif
 - **JavaScript** → Interaktivitas
 - **Bootstrap** → Framework utama untuk tampilan responsif
 
+## Struktur Project
+SkinfaDev_Alirsyad_BitFest2025/
+│
+├─ assets/
+│ ├─ css/
+│ │ ├─ animate.min.css
+│ │ ├─ app.css
+│ │ ├─ bootstrap.min.css
+│ │ ├─ jquery.magnific-popup.css
+│ │ ├─ odometer.min.css
+│ │ └─ slick.css
+│ ├─ fontawesome/
+│ │ └─ font-awesome.css
+│ ├─ fonts/
+│ │ ├─ fa-brands-400.woff2
+│ │ ├─ fa-duotone-900.woff2
+│ │ ├─ fa-light-300.woff2
+│ │ ├─ fa-regular-400.woff2
+│ │ └─ fa-solid-900.woff2
+│ └─ js/
+│ ├─ app.js
+│ ├─ bootstrap.bundle.min.js
+│ ├─ jquery-3.6.3.min.js
+│ ├─ jquery-appear.js
+│ ├─ jquery-validator.js
+│ ├─ jquery-countdown.js
+│ ├─ jquery.magnific-popup.js
+│ ├─ odometer.min.js
+│ ├─ slick.min.js
+│ ├─ tilt.jquery.js
+│ ├─ wa.js
+│ └─ wow.js
+│
+├─ media/
+│ ├─ backgrounds/
+│ ├─ banners/
+│ ├─ berita/
+│ ├─ brand/
+│ ├─ dosen/
+│ ├─ fakultas/
+│ ├─ fasilitas/
+│ ├─ galeri/
+│ ├─ icons/
+│ ├─ mahasiswa/
+│ ├─ resource-cic/
+│ └─ shapes/
+│ ├─ close.png
+│ └─ favicon.png
+│
+├─ about.html
+├─ berita.html
+├─ biaya.html
+├─ dosen.html
+├─ fakultas-FEB.html
+├─ fakultas-FTI.html
+├─ faq.html
+├─ fasilitas.html
+├─ galeri.html
+├─ index.html
+├─ kontak.html
+└─ README.md
+
 ## Cara run project
 1. Salin link repository ini.
 2. Clone ke folder yang anda inginkan.

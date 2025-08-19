@@ -1,7 +1,8 @@
 # SkinfaDev_smkinformatika-alirsyad-crbn_BitFest2025
 
 ## Contributor
-Syafiq Bamazruk • Irbadh As-siribuny
+- Syafiq Bamazruk  
+- Irbadh As-siribuny
 
 ## Penjelasan
 Projek ini dibuat untuk mengikuti Lomba Web Desain oleh **BITFEST 2025 Universitas CIC**, dengan menggunakan framework utamanya adalah **Bootstrap**.  

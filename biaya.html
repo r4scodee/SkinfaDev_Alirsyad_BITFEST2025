@@ -208,11 +208,9 @@
                     <div class="col-12">
                         <div class="pdf-container" data-aos="fade-up">
 
-                            <!-- Header -->
                             <div class="pdf-header" style="background: #0352a1;">
                                 <div class="d-flex align-items-center justify-content-between flex-wrap">
 
-                                    <!-- Title -->
                                     <div class="pdf-title d-flex align-items-center">
                                         <i class="fa-solid fa-file-pdf text-danger me-2 fs-3"></i>
                                         <div>
@@ -221,7 +219,6 @@
                                         </div>
                                     </div>
 
-                                    <!-- Actions (sejajar) -->
                                     <div class="pdf-actions mt-2 mt-md-0 d-flex align-items-center">
                                         <button class="btn btn-light btn-sm me-2 d-flex align-items-center" onclick="refreshPDF()">
         <i class="fa-solid fa-rotate-right me-1"></i> Refresh
@@ -234,9 +231,7 @@
                             </div>
 
 
-                            <!-- PDF Wrapper -->
                             <div class="pdf-wrapper">
-                                <!-- Loading -->
                                 <div class="pdf-loading" id="pdfLoading">
                                     <div class="loading-spinner text-center">
                                         <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;">
@@ -246,10 +241,8 @@
                                     </div>
                                 </div>
 
-                                <!-- PDF Frame -->
                                 <iframe id="pdfFrame" src="https://drive.google.com/file/d/11l-FyproT7K31THy9zv3HFJcC0D5sAg3/preview" width="100%" height="800" frameborder="0" onload="hidePDFLoading()" onerror="showPDFError()"></iframe>
 
-                                <!-- Error -->
                                 <div class="pdf-error" id="pdfError" style="display: none;">
                                     <div class="error-content">
                                         <i class="bi bi-exclamation-triangle-fill text-warning"></i>
@@ -350,8 +343,13 @@
                                         <i class="fal fa-map-marker-alt"></i>Jl. Kesambi No.202, Kesambi, Kota Cirebon
                                     </li>
                                     <li class="mb-16">
-                                        <a href="mailto:info@ucic.ac.id"><i class="fal fa-envelope"></i>info@cic.ac.id</a>
+                                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@ucic.ac.id" target="_blank" rel="noopener">
+                                            <i class="fal fa-envelope"></i>
+                                            <span style="margin-left:8px">info@ucic.ac.id</span>
+                                        </a>
                                     </li>
+
+
                                     <li>
                                         <a href="https://wa.me/6281216700519" target="_blank">
                                             <i class="fab fa-whatsapp"></i> Hubungi Kami
